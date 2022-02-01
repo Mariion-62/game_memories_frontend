@@ -1,5 +1,14 @@
+import { SApp } from './style';
+import Header from './components/Header';
+
 function App() {
-  return <h1>Hello there!</h1>;
+  return (
+    <div>
+      <SApp>
+        <Header />
+      </SApp>
+    </div>
+  );
 }
 
 export default App;

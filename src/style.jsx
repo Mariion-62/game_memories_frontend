@@ -1,12 +1,17 @@
-import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-export const SApp = styled.body`
-  @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap');
+const SGlobal = createGlobalStyle`
+  
+  :root { 
   background-color: #07689f;
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  font-family: 'Mountains of Christmas', cursive;
+  --font-family: 'Mountains of Christmas', cursive;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
-export default { SApp };
+export default SGlobal;

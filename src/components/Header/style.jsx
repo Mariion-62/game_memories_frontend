@@ -7,7 +7,8 @@ export const SHeader = styled.header`
     justify-content: center;
     padding-top: 15px;
     font-size: 100px;
+    font-family: var(--font-family);
   }
 `;
 
-export default { SHeader };
+export default SHeader;

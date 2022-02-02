@@ -1,12 +1,14 @@
-import { SApp } from './style';
-import Header from './components/Header';
+import HomePage from 'components/HomePage';
+import Library from 'components/Library';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <SApp>
-        <Header />
-      </SApp>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/library" element={<Library />} />
+      </Routes>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import SCards from './style';
 
 export default function Cards() {
   const [characters, setCharacters] = useState([]);
+  const pairOfCards = [...characters, ...characters];
+
   useEffect(() => {
     axios
       .get(`http://localhost:6060/cards`)
@@ -16,10 +18,11 @@ export default function Cards() {
         toast('ERROR');
       });
   }, []);
+
   return (
     <SCards>
       <section className="card">
-        {characters.map((character) => (
+        {pairOfCards.map((character) => (
           <div className="cardCharacter">
             <img
               className="imgCharacter"

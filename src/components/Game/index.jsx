@@ -1,9 +1,9 @@
 import Cards from 'components/Cards';
 
-export default function Library() {
+export default function Game() {
   return (
     <>
-      <h1>Galleries d images</h1>
+      <h1>Jeu</h1>
       <Cards />
     </>
   );

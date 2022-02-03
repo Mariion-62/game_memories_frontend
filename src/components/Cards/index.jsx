@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import Card from 'components/Card';
 import SCards from './style';
 
 export default function Cards() {
@@ -21,18 +22,9 @@ export default function Cards() {
 
   return (
     <SCards>
-      <section className="card">
-        {pairOfCards.map((character) => (
-          <div className="cardCharacter">
-            <img
-              className="imgCharacter"
-              src={character.picture}
-              alt={character.name}
-            />
-            <h2 className="nameCharacter">{character.name}</h2>
-          </div>
-        ))}
-      </section>
+      {pairOfCards.map((character) => {
+        return <Card name={character.name} picture={character.picture} />;
+      })}
     </SCards>
   );
 }

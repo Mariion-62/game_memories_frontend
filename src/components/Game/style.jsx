@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SHeader = styled.header`
+const SGame = styled.header`
   header {
     display: flex;
     margin: 5vh;
@@ -18,4 +18,4 @@ const SHeader = styled.header`
   }
 `;
 
-export default SHeader;
+export default SGame;

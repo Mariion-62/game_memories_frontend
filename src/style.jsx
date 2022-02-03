@@ -4,8 +4,6 @@ const SGlobal = createGlobalStyle`
   
   :root { 
   background-color: #07689f;
-  width: 100vw;
-  height: 100vh;
   --font-family: 'Mountains of Christmas', cursive;
   }
   body {

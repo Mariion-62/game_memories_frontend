@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const SGlobal = createGlobalStyle`
   
   :root { 
-  background-color: #07689f;
+  background-color: #086E7D;
   --font-family: 'Mountains of Christmas', cursive;
   }
   body {

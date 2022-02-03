@@ -8,8 +8,8 @@ const SCard = styled.div`
     align-items: center;
     border: 2px solid black;
     border-radius: 10%;
+    height: 20vh;
     width: 15vw;
-    padding: 5px;
     background: white;
     box-shadow: 1px 6px 13px 1px rgba(0, 0, 0, 0.42);
     -webkit-box-shadow: 1px 6px 13px 1px rgba(0, 0, 0, 0.42);
@@ -17,7 +17,8 @@ const SCard = styled.div`
 
     img {
       max-width: 100%;
-      padding-top: 30px;
+      max-height: 85%;
+      margin: auto;
     }
   }
 
@@ -68,6 +69,7 @@ const SCard = styled.div`
       }
     }
   }
+
 
 `;
 export default SCard;

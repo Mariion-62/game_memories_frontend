@@ -7,6 +7,7 @@ export default function Card({ name, picture }) {
   const flipCard = () => {
     setOpen(true);
   };
+
   return (
     <SCard>
       <button
